@@ -1,0 +1,39 @@
+# Compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+
+# Coverage
+.coverage
+coverage.xml
+htmlcov/
+
+
+# Pytest
+.pytest_cache/
+
+
+# Editor
+.vscode/
+.idea/
+
+
+# Logs
+*.log
+
+
+# Mac
+.DS_Store
