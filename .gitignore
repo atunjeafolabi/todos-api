@@ -25,6 +25,9 @@ htmlcov/
 # Pytest
 .pytest_cache/
 
+# Azure Pipelines
+.azure-pipelines/
+
 
 # Editor
 .vscode/
