@@ -92,4 +92,13 @@ Sample Response:
 To view test coverage report, run:
 >  coverage run -m pytest
 
+- View test coverage report
 > coverage report
+
+- Run test with coverage checked
+
+Run this first:
+> export PYTHONPATH=$(pwd)
+
+Then run:
+> pytest --cov=app --cov-report=xml:coverage.xml --cov-report=term --cov-fail-under=80

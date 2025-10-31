@@ -28,7 +28,7 @@ def test_mark_as_done():
     s.clear()
     item = s.add("feed the cats")
     id = item["id"]
-    print(s.list_items())
+
     todo_item = s.get(id)
 
     assert todo_item["done"] is False
