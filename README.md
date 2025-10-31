@@ -1,7 +1,12 @@
-# Overview
+# Basic Todo JSON API + Azure Pipelines
+
+## Overview
 This is a simple Todos web API that returns JSON.
 
-# Installation
+ # Technologies used
+- Flask
+
+# Local Development Setup
 
 1) Create A Virtual Environment
 > python3 -m venv venv
@@ -14,6 +19,13 @@ This is a simple Todos web API that returns JSON.
 
 4) Start the application locally
 > flask --app main run
+
+## Application Features
+- Create a new todo item
+- List a toto item
+- List all todo items
+- Mark a todo item as done
+- Clear all items in todo list
 
 # Endpoints
 - Create a Todo Item
@@ -90,10 +102,13 @@ Response code: 200 Ok
 }
 ```
 
- # Technologies used
-- Flask
+## CI Pipeline Implementation
+Azure pipelines used for CI.
 
-# Tests
+## Branch Policies and Protection
+- `Main` branch is protected and only the admin is authorized to merge development into `main` branch.
+
+## Testing Strategy
 - To run tests
 > `python -m pytest`
 > 
@@ -112,3 +127,5 @@ Run this first:
 
 Then run:
 > pytest --cov=app --cov-report=xml:coverage.xml --cov-report=term --cov-fail-under=80
+
+## Troubleshooting Guide
