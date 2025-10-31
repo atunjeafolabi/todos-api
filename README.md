@@ -95,7 +95,7 @@ To generate test coverage report, run:
 - To view test coverage report
 > coverage report
 
-- Run test with coverage checked
+- Run test with 80% threshold coverage checked
 
 Run this first:
 > export PYTHONPATH=$(pwd)
