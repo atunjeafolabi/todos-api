@@ -19,7 +19,11 @@ class TodoService:
         return [i.as_dict() for i in self._items]
 
     def get(self, todo_id: int):
-        return self._items[todo_id].as_dict()
+        for item in self._items:
+            if item.id == todo_id:
+                return item.as_dict()
+
+        return []
 
     def add(self, title: str) -> Dict:
         if not title or not isinstance(title, str):
