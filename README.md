@@ -1,10 +1,24 @@
 # Basic Todo JSON API + Azure Pipelines
 
 ## Overview
-This is a simple Todos web API that returns JSON.
+
+This project is an implementation of a CI pipeline around a basic Todo web API that returns JSON data and built with Flask. It demonstrates
+branching + PR workflow, build automation, unit testing with coverage, and static
+analysis in CI. GitHub is used for source control and Azure Pipelines for CI.
+
+The main focus of this project are as follows:
+- Proper version control practices.
+- Build automation setup.
+- CI pipeline implementation.
+- Branch protection and policies.
+- Automated testing integration.
 
  # Technologies used
+- Python
 - Flask
+- Git and Github (version management)
+- Azure Pipelines (CI)
+
 
 # Local Development Setup
 
@@ -103,7 +117,7 @@ Response code: 200 Ok
 ```
 
 ## CI Pipeline Implementation
-Azure pipelines used for CI.
+Azure pipelines used for CI. Code coverage of ≥ 80% (enforced)
 
 ## Branch Policies and Protection
 - `Main` branch is protected and only the admin is authorized to merge development into `main` branch.
@@ -120,7 +134,7 @@ To generate test coverage report, run:
 - To view test coverage report
 > coverage report
 
-- Run test with 80% threshold coverage checked
+- Run test with ≥ 80% threshold coverage checked
 
 Run this first:
 > export PYTHONPATH=$(pwd)
