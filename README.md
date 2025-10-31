@@ -84,5 +84,12 @@ Sample Response:
 - Flask
 
 # Tests
-To run tests
+- To run tests
 > `python -m pytest`
+> 
+- View Test Coverage
+
+To view test coverage report, run:
+>  coverage run -m pytest
+
+> coverage report
