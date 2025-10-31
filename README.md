@@ -17,16 +17,68 @@ This is a simple Todos web API that returns JSON.
 
 # Endpoints
 - Create a Todo Item
-> POST /todos
+
+`POST /todos`
+```
+Sample Response:
+{
+    "done": false,
+    "id": 2,
+    "title": "wash the dishes"
+}
+```
 
 - Get all Todo Items
-> GET /todos
+
+`GET /todos`
+```
+Sample Response:
+[
+    {
+        "done": false,
+        "id": 1,
+        "title": "wash the dishes"
+    },
+    {
+        "done": false,
+        "id": 2,
+        "title": "feed the dogs"
+    }
+]
+```
 
 - Get a single Todo Item
-> GET /todos/{todo_id}
+
+`GET /todos/{todo_id}`
+```
+Sample Response:
+{
+    "done": false,
+    "id": 2,
+    "title": "wash the dishes"
+}
+```
+
+- Mark Todo Item as done
+
+`/todos/{todo_id}/done`
+```
+Sample Response:
+{
+    "done": true,
+    "id": 2,
+    "title": "wash the dishes"
+}
+```
 
 - Clear all Todo Items
-> /todos/clear
+
+`POST /todos/clear`
+```
+{
+    "message": "Todo list cleared successfully"
+}
+```
 
  # Technologies used
 - Flask
