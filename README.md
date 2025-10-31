@@ -22,7 +22,7 @@ The main focus of this project are as follows:
 
 # Local Development Setup
 
-1) Create A Virtual Environment
+1) From the project root, create a virtual environment
 > python3 -m venv venv
 
 2) Activate the virtual environment:
