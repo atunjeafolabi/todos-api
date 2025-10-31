@@ -13,14 +13,14 @@ The main focus of this project are as follows:
 - Branch protection and policies.
 - Automated testing integration.
 
- # Technologies used
+## Technologies used
 - Python
 - Flask
 - Git and Github (version management)
 - Azure Pipelines (CI)
 
 
-# Local Development Setup
+## Local Development Setup
 
 1) From the project root, create a virtual environment
 > python3 -m venv venv
@@ -41,7 +41,7 @@ The main focus of this project are as follows:
 - Mark a todo item as done
 - Clear all items in todo list
 
-# Endpoints
+## Endpoints
 - Create a Todo Item
 
 `POST /todos`
@@ -81,7 +81,7 @@ Sample Response:
 
 `GET /todos/{todo_id}`
 ```
-Response code: 200 Ok
+Response code: 200 OK
 
 Sample Response:
 {
@@ -95,7 +95,7 @@ Sample Response:
 
 `/todos/{todo_id}/done`
 ```
-Response code: 200 Ok
+Response code: 200 OK
 
 Sample Response:
 {
@@ -109,7 +109,7 @@ Sample Response:
 
 `POST /todos/clear`
 ```
-Response code: 200 Ok
+Response code: 200 OK
 
 {
     "message": "Todo list cleared successfully"
@@ -123,18 +123,19 @@ Azure pipelines used for CI. Code coverage of ≥ 80% (enforced)
 - `Main` branch is protected and only the admin is authorized to merge development into `main` branch.
 
 ## Testing Strategy
-- To run tests
+
+#### To run tests
 > `python -m pytest`
 > 
-- View Test Coverage
+#### View Test Coverage
 
 To generate test coverage report, run:
 >  coverage run -m pytest
 
-- To view test coverage report
+#### To view test coverage report
 > coverage report
 
-- Run test with ≥ 80% threshold coverage checked
+#### Run test with ≥ 80% threshold coverage checked
 
 Run this first:
 > export PYTHONPATH=$(pwd)
