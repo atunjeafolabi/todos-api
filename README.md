@@ -20,6 +20,8 @@ This is a simple Todos web API that returns JSON.
 
 `POST /todos`
 ```
+Response code: 201 CREATED
+
 Sample Response:
 {
     "done": false,
@@ -32,6 +34,8 @@ Sample Response:
 
 `GET /todos`
 ```
+Response code: 200 OK
+
 Sample Response:
 [
     {
@@ -51,6 +55,8 @@ Sample Response:
 
 `GET /todos/{todo_id}`
 ```
+Response code: 200 Ok
+
 Sample Response:
 {
     "done": false,
@@ -63,6 +69,8 @@ Sample Response:
 
 `/todos/{todo_id}/done`
 ```
+Response code: 200 Ok
+
 Sample Response:
 {
     "done": true,
@@ -75,6 +83,8 @@ Sample Response:
 
 `POST /todos/clear`
 ```
+Response code: 200 Ok
+
 {
     "message": "Todo list cleared successfully"
 }
