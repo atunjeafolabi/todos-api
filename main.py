@@ -10,7 +10,7 @@ def health():
     return jsonify({"status": "ok"})
 
 
-@app.get("/todos")
+@app.get("/todos/")
 def get_todos():
     return jsonify(todo_service.list_items())
 
@@ -32,6 +32,7 @@ def add_todo():
     except ValueError as e:
         return jsonify({"error": str(e)}), 400
 
+# TODO: add delete a single todo list item
 
 @app.post("/todos/<int:item_id>/done")
 def mark_done(item_id: int):
