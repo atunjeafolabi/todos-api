@@ -22,7 +22,7 @@ This is a simple Todos web API that returns JSON.
 
 ## Application Features
 - Create a new todo item
-- List a toto item
+- List a todo item
 - List all todo items
 - Mark a todo item as done
 - Clear all items in todo list
