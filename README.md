@@ -89,10 +89,10 @@ Sample Response:
 > 
 - View Test Coverage
 
-To view test coverage report, run:
+To generate test coverage report, run:
 >  coverage run -m pytest
 
-- View test coverage report
+- To view test coverage report
 > coverage report
 
 - Run test with coverage checked
