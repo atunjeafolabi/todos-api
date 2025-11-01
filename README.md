@@ -143,4 +143,8 @@ Run this first:
 Then run:
 > pytest --cov=app --cov-report=xml:coverage.xml --cov-report=term --cov-fail-under=80
 
+## Running Pylint
+
+> pylint *
+
 ## Troubleshooting Guide
