@@ -22,7 +22,7 @@ def get_one_todo(item_id: int):
     except KeyError:
         return jsonify({"error": "not found"}), 404
 
-@app.post("/todos")
+@app.post("/todos/")
 def add_todo():
     payload = request.get_json() or {}
     title = payload.get("title")
@@ -34,7 +34,7 @@ def add_todo():
 
 # TODO: add delete a single todo list item
 
-@app.post("/todos/<int:item_id>/done")
+@app.post("/todos/<int:item_id>/done/")
 def mark_done(item_id: int):
     try:
         item = todo_service.mark_done(int(item_id))
@@ -42,7 +42,7 @@ def mark_done(item_id: int):
     except KeyError:
         return jsonify({"error": "not found"}), 404
 
-@app.post("/todos/clear")
+@app.post("/todos/clear/")
 def clear_todos():
     todo_service.clear()
     if len(todo_service.list_items()) == 0:
